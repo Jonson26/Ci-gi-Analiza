@@ -35,6 +35,8 @@ public class Ciagi {
         Tree t = new Tree(-51); //pierwszy węzeł musi mieć wartość mniejszą od najmniejszej występującej w ciągu
         analizujDalej(t, ciag, 0); //tworzymy drzewo
         System.out.println(longestBranch(t)-1); //wywalamy długość najdłuższej gałęzi -1 (patrz wyżej)
+        Visualiser v = new Visualiser();
+        v.mkWinow(t);
     }
     
     public void analizujDalej(Tree t, ArrayList<Integer> ciag, int j){ //kod tworzący drzewo
